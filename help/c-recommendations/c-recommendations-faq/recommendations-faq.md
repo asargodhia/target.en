@@ -115,9 +115,9 @@ This type of weighting is more dynamic, and is based on the current “recommend
 
 Target sometimes cannot show recommendations due to the low number of available recommendations.
 
-The number of values generated per criteria is 5 times the number of entities specified in the design. Runtime filtering (for example, inventory, mbox attribute matching) is applied after the 5x values are generated, so it is possible end up with fewer than 5x values at delivery time. To mitigate this situation, increase the number of entities in the design by hiding additional entities.
+The number of values generated per criteria is 3 times the number of entities specified in the design. Runtime filtering (for example, inventory, mbox attribute matching) is applied after the 3x values are generated, so it is possible end up with fewer than 3x values at delivery time. To mitigate this situation, increase the number of entities in the design by hiding additional entities.
 
-The following JavaScript can be used at the beginning of the design to increase the number of requested entities. In this example, the requested entity count would be 50 (5x10).
+The following JavaScript can be used at the beginning of the design to increase the number of requested entities. In this example, the requested entity count would be 30 (3x10).
 
 ```
 #foreach($entity in $entities) 
